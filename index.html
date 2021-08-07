@@ -1,144 +1,373 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92574753-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-92574753-2');
+    </script>
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter47285850 = new Ya.Metrika({
+                        id: 47285850,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "../mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/47285850" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Glanz &#8211; Just another WordPress site</title>
+    <link rel='dns-prefetch' href='http://ajax.aspnetcdn.com/' />
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+    <link rel='dns-prefetch' href='http://s.w.org/' />
+    <script type="text/javascript">
+        window._wpemojiSettings = {
+            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
+            "ext": ".png",
+            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
+            "svgExt": ".svg",
+            "source": {
+                "concatemoji": "http:\/\/glanz.starkethemes.com\/wp-includes\/js\/wp-emoji-release.min.js"
+            }
+        };
+        ! function(e, a, t) {
+            var n, r, o, i = a.createElement("canvas"),
+                p = i.getContext && i.getContext("2d");
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+            function s(e, t) {
+                var a = String.fromCharCode;
+                p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+                e = i.toDataURL();
+                return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+            }
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
+            function c(e) {
+                var t = a.createElement("script");
+                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+            }
+            for (o = Array("flag", "emoji"), t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
+                if (!p || !p.fillText) return !1;
+                switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+                    case "flag":
+                        return s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) ? !1 : !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
+                    case "emoji":
+                        return !s([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039])
+                }
+                return !1
+            }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
+                t.DOMReady = !0
+            }, t.supports.everything || (n = function() {
+                t.readyCallback()
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
+                "complete" === a.readyState && t.readyCallback()
+            })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+        }(window, document, window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='rsvp_css-css' href='wp-content/plugins/rsvp/rsvp_plugin.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='sb_instagram_styles-css' href='wp-content/plugins/instagram-feed/css/sb-instagram.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)' />
+    <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-studio-fonts-css' href='http://fonts.googleapis.com/css?family=Dosis%3A400%2C700%7COpen%2BSans%3A400%2C400i%2C700%2C700i%7CPlayfair+Display%3A400%2C400i%2C700%2C700i' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-library-css' href='wp-content/themes/glanztheme/css/glanztheme_library.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='themify-icons-css' href='wp-content/themes/glanztheme/fonts/themify-icons.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='marsha-font-css' href='wp-content/themes/glanztheme/fonts/marsha/stylesheet.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-woo-commerce-css' href='wp-content/themes/glanztheme/css/woocommerce.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-main-styles-css' href='wp-content/themes/glanztheme/css/glanztheme_style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='glanztheme-style-css' href='wp-content/themes/glanztheme/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-breadcrumbs-add-css-css' href='wp-content/plugins/unyson/framework/extensions/breadcrumbs/static/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-builder-frontend-grid-css' href='wp-content/plugins/unyson/framework/extensions/builder/static/css/frontend-grid.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-ext-forms-default-styles-css' href='wp-content/plugins/unyson/framework/extensions/forms/static/css/frontend.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-shortcode-section-background-video-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/background.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='fw-shortcode-section-css' href='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='wp-content/plugins/unyson/framework/static/libs/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='https://api.w.org/' href='wp-json/index.html' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+    <link rel="canonical" href="index.html" />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed0256.json?url=http%3A%2F%2Fglanz.starkethemes.com%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed78b2?url=http%3A%2F%2Fglanz.starkethemes.com%2F&amp;format=xml" /> <noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+    <style>
+        img.crazy_lazy {
+            opacity: 0
+        }
+    </style>
+    <style></style>
 </head>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
-
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="glanz.starkethemes.com/index.html">
-						Glanz &#8211; Just another WordPress site
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=glanz.starkethemes.com/index.html">
-
-
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
-
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
-
+<body class="home page-template page-template-template-one-page page-template-template-one-page-php page page-id-705">
+    <div class="gla_page gla_middle_titles" id="gla_page">
+        <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
+        <div class="gla_music_icon"> <i class="ti ti-music"></i> </div>
+        <div class="gla_music_icon_cont"> <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/66757544&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> </div>
+        <header class="gla_header">
+            <nav class="gla_light_nav gla_nav_none">
+                <div class="container"> </div>
+            </nav>
+        </header>
+        <section class="gla_slider gla_image_bck gla_fixed " data-stellar-background-ratio="0.2" data-image="http://glanz.starkethemes.com/wp-content/uploads/2017/07/OIZY2P0-1400x933.jpg" data-color="">
+            <div class="container">
+                <div class="gla_slide_txt gla_slide_center_middle text-center">
+                    <p><img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/main_logo_wh.gif" height="190" style="height: 190px!important" alt="Glanz"></p>
+                </div>
+            </div>
+            <a class="gla_scroll_down gla_go" href="#gla_content"> <b></b> Scroll </a>
+        </section>
+        <section id="gla_content" class="gla_content">
+            <div class="fw-page-builder-content">
+                <section id="demo" class=" gla_section gla_image_bck ">
+                    <div class="container text-center">
+                        <h2 class="gla_h2_title">Home Pages</h2>
+                        <h3 class="gla_subtitle">Check out these outstanding<br>Glanz demos:</h3>
+                        <p><img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/just.gif" data-bottom-top="@src:http://glanz.starkethemes.com/wp-content/themes/glanztheme/images/animations/just.gif" height="180" alt="Glanz"></p>
+                        <div class="gla_icon_boxes row text-left">
+                            <div class="col-md-6 col-sm-6">
+                                <a href="home-1-animated-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr1-900x510.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Animated Flowers</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <a href="home-2-pink-animated-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr2-900x510.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Pink Flowers</span> </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gla_icon_boxes row text-left">
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-3-golden-badges/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr3-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Golden Pages</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-4-great-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr4-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Great Flowers Type I</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-5-great-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr5-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Great Flowers Type II</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-6-great-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr6-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Great Flowers Type III</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-pege-7/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr7-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Parallax</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="home-8-landing/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/pr8-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Landing</span> </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="demo2" class=" gla_section gla_image_bck " style=background-color:#f6f6f6;>
+                    <div class="container text-center">
+                        <h2 class="gla_h2_title">Business</h2>
+                        <h3 class="gla_subtitle">Glanz can also be used for <br>a variety of business uses</h3>
+                        <p><img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/ourwedding.gif" data-bottom-top="@src:http://glanz.starkethemes.com/wp-content/themes/glanztheme/images/animations/ourwedding.gif" height="180"
+                                alt="Glanz"></p>
+                        <div class="gla_icon_boxes row text-left">
+                            <div class="col-md-4 col-sm-6">
+                                <a href="wedding-planner/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/b1-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Wedding Planner</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="wedding-cakes/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/b2-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Wedding Cakes</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <a href="wedding-flowers/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/b1-600x340.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Wedding Flowers</span> </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="demo3" class=" gla_section gla_image_bck ">
+                    <div class="container text-center">
+                        <h2 class="gla_h2_title">Invitations</h2>
+                        <h3 class="gla_subtitle">Elegant event invitation and<br>wedding announcement templates</h3>
+                        <p><img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/invitations/inv_i/save_the_date_pu.gif" data-bottom-top="@src:/wp-content/themes/glanztheme/images/invitations/inv_i/save_the_date_pu.gif" height="150" alt=""></p>
+                        <div class="gla_icon_boxes row text-left">
+                            <div class="col-md-3 col-sm-6">
+                                <a href="invitation-i/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/i1-600x403.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Pink</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="invitation-ii/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/i2-600x403.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Green</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="invitation-iii/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/i3-600x403.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Purple</span> </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <a href="invitation-iv/index.html" class="gla_news_block"> <span class="gla_news_img"> <span class="gla_over" data-image="wp-content/uploads/2017/07/i4-600x403.jpg"></span> </span>
+                                    <div class="gla_news_cont"> <span class="gla_news_title">Red</span> </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class=" gla_section gla_image_bck gla_fixed " style=background-image:url(wp-content/uploads/2017/07/OIZY2P0-1400x933.jpg); data-stellar-background-ratio="0.2">
+                    <div class="container text-center">
+                        <p><img class="gla_animated_flower" src="wp-content/themes/glanztheme/images/animations/thanks_gold_wh.gif" height="180" alt="Glanz"></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script type='text/javascript' src='../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' defer='defer'></script>
+    <script type='text/javascript'>
+        try {
+            jQuery.noConflict();
+        } catch (e) {};
+    </script>
+    <script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js' defer='defer'></script>
+    <script type='text/javascript' src='../ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var rsvp_plugin_vars = {
+            "askEmail": "Please enter an email address that we can use to contact you about the extra guest. We have to keep a pretty close eye on the number of attendees. Thanks!",
+            "customNote": "If you are adding additional RSVPs please enter your email address in case we have questions",
+            "newAttending1LastName": "Please enter a last name",
+            "newAttending1FirstName": "Please enter a first name",
+            "newAttending2LastName": "Please enter a last name",
+            "newAttending2FirstName": "Please enter a first name",
+            "newAttending3LastName": "Please enter a last name",
+            "newAttending3FirstName": "Please enter a first name",
+            "attendeeFirstName": "Please enter a first name",
+            "attendeeLastName": "Please enter a last name",
+            "firstName": "Please enter your first name",
+            "lastName": "Please enter your last name",
+            "passcode": "Please enter your password"
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/rsvp/rsvp_plugin.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "apiSettings": {
+                "root": "http:\/\/glanz.starkethemes.com\/wp-json\/contact-form-7\/v1",
+                "namespace": "contact-form-7\/v1"
+            },
+            "recaptcha": {
+                "messages": {
+                    "empty": "Please verify that you are not a robot."
+                }
+            }
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scripts.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var sb_instagram_js_options = {
+            "sb_instagram_at": "4075526338.3a81a9f.728d2574e9a54fc58a5e9b0eb1157d59"
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/instagram-feed/js/sb-instagram.min.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "http:\/\/glanz.starkethemes.com\/?wc-ajax=%%endpoint%%",
+            "i18n_view_cart": "View cart",
+            "cart_url": "http:\/\/glanz.starkethemes.com\/cart\/",
+            "is_cart": "",
+            "cart_redirect_after_add": "no"
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var woocommerce_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "http:\/\/glanz.starkethemes.com\/?wc-ajax=%%endpoint%%"
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js' defer='defer'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_cart_fragments_params = {
+            "ajax_url": "\/wp-admin\/admin-ajax.php",
+            "wc_ajax_url": "http:\/\/glanz.starkethemes.com\/?wc-ajax=%%endpoint%%",
+            "fragment_name": "wc_fragments_3acfafd6ce4853a61655b73de40e0301"
+        }; /* ]]> */
+    </script>
+    <script type='text/javascript' src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-includes/js/imagesloaded.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/themes/glanztheme/js/glanztheme_library.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/unyson/framework/static/js/fw-form-helpers.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/themes/glanztheme/js/navigation.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/themes/glanztheme/js/skip-link-focus-fix.js' defer='defer'></script>
+    <script type='text/javascript' src='../ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/themes/glanztheme/js/glanztheme_script.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/speed-booster-pack/inc/js/jquery.unveil.min.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/js/core.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/js/transition.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/js/background.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-content/plugins/unyson/framework/extensions/shortcodes/shortcodes/section/static/js/background.init.js' defer='defer'></script>
+    <script type='text/javascript' src='wp-includes/js/wp-embed.min.js' defer='defer'></script>
 </body>
 
 </html>
-
-
